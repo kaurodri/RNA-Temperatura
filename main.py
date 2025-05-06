@@ -26,3 +26,9 @@ plt.ylabel('°F', fontsize=20)
 
 #Demonstração de Curvatura
 # plt.hist(np.random.randn(100000), bins=100, edgecolor='white', linewidth=2);
+
+#MODELO
+#Inicializar os pesos e bias
+#Feedforward
+#Calcular a perda
+#Backpropagation
