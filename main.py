@@ -74,3 +74,7 @@ Y = get_linear_curve(x, w = 1.8, b =  32)
 #Inicializar
 w = np.random.rand(1)
 b = np.zeros(1)
+
+#Célula 13
+w, b = model_fit(x, Y, w, b, epochs = 500, lr = 0.001)
+print(f'w: {w[0]:.3f}, b: {b[0]:.3f}')
