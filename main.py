@@ -69,3 +69,8 @@ def model_fit(inputs, target, w, b, epochs = 200, lr = 0.001):
 #Célula 11
 x = np.arange(-10, 30, 2)
 Y = get_linear_curve(x, w = 1.8, b =  32)
+
+#Célula 12
+#Inicializar
+w = np.random.rand(1)
+b = np.zeros(1)
