@@ -54,3 +54,14 @@ def backpropagation(inputs, outputs, targets, w, b, lr):
     w -= dw
     b -= db
     return w, b
+
+#Célula 10
+def model_fit(inputs, target, w, b, epochs = 200, lr = 0.001):
+    for epoch in range(epochs):
+        outputs = forward(inputs, w, b)
+        loss = np.mean(mse(target, outputs))
+        w, b = backpropagation(inputs, outputs, target, w, b, lr)
+
+        if (epoch + 1) % (epochs / 10) == 0:
+            print(f'Epoch: [{(epoch+1)}/{epochs}] Loss: [{loss:.4f}]')
+    return w, b
