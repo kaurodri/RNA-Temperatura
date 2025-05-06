@@ -45,3 +45,12 @@ def forward(inputs, w, b):
 #Célula 8
 def mse(Y, y):
     return (Y - y) ** 2
+
+#Célula 9
+def backpropagation(inputs, outputs, targets, w, b, lr):
+    dw = lr * (-2 * inputs * (targets - outputs)).mean()
+    db = lr * (-2 * (targets - outputs)).mean()
+
+    w -= dw
+    b -= db
+    return w, b
