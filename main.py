@@ -32,3 +32,8 @@ plt.ylabel('°F', fontsize=20)
 #Feedforward
 #Calcular a perda
 #Backpropagation
+
+#Célula 6
+#Inicializar
+w = np.random.rand(1)
+b = 0
