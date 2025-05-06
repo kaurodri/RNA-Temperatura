@@ -41,3 +41,7 @@ b = 0
 #Célula 7
 def forward(inputs, w, b):
     return w * inputs + b
+
+#Célula 8
+def mse(Y, y):
+    return (Y - y) ** 2
