@@ -37,3 +37,7 @@ plt.ylabel('°F', fontsize=20)
 #Inicializar
 w = np.random.rand(1)
 b = 0
+
+#Célula 7
+def forward(inputs, w, b):
+    return w * inputs + b
