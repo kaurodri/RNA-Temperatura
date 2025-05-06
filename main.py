@@ -65,3 +65,7 @@ def model_fit(inputs, target, w, b, epochs = 200, lr = 0.001):
         if (epoch + 1) % (epochs / 10) == 0:
             print(f'Epoch: [{(epoch+1)}/{epochs}] Loss: [{loss:.4f}]')
     return w, b
+
+#Célula 11
+x = np.arange(-10, 30, 2)
+Y = get_linear_curve(x, w = 1.8, b =  32)
