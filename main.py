@@ -78,3 +78,7 @@ b = np.zeros(1)
 #Célula 13
 w, b = model_fit(x, Y, w, b, epochs = 500, lr = 0.001)
 print(f'w: {w[0]:.3f}, b: {b[0]:.3f}')
+
+#Célula 14
+plt.scatter(x, Y)
+plt.plot(x, get_linear_curve(x, w, b), 'r', lw=3)
